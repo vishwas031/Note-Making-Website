@@ -15,7 +15,13 @@ body {
   min-height: 100vh;
   background: linear-gradient(45deg, #db61b9, #4398d6);
   overflow: hidden;
+  opacity: 0;
+  transition: opacity 2s ease;
 }
+.visible {
+  opacity: 1;
+}
+
 nav {
   height: 15vh;
   width: 100%;
@@ -49,7 +55,6 @@ main > div {
 
 .leftSide {
   transform: translateY(-80%);
-  padding-left: 80px;
 }
 
 .heading {
@@ -60,15 +65,14 @@ main > div {
 .sub-heading {
   font-size: 25px;
   font-weight: normal;
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
   margin: 0;
 }
 
 .rightSide {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   transform: translateY(-50px);
-  /* padding-right: 150px; */
 }
 
 .homepage-illustration {
