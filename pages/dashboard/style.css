@@ -20,7 +20,7 @@ body {
 }
 
 nav {
-  height: 10vh;
+  height: 15vh;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -47,9 +47,11 @@ nav {
   cursor: pointer;
   margin-left: 15px;
 }
-
+a {
+  text-decoration: none;
+}
 .card-container {
-  height: 90vh;
+  height: 85vh;
   width: 100%;
   padding: 0 80px;
   display: grid;

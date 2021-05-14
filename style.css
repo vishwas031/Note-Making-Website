@@ -50,6 +50,9 @@ main {
   -webkit-backdrop-filter: blur(6px);
   cursor: pointer;
 }
+a {
+  text-decoration: none;
+}
 
 main > div {
   width: 50%;
