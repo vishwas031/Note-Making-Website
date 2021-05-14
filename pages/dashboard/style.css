@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(45deg, #ff9ce3, #4ab3ff);
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.visible {
+  opacity: 1;
+}
+
+nav {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+}
+
+.welcome {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.nav-controls {
+  display: flex;
+}
+
+.nav-options {
+  background: rgba(255, 255, 255, 0.4);
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid white;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.card-container {
+  height: 90vh;
+  width: 100%;
+  padding: 0 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(10rem, 100%), 1fr));
+  gap: 50px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  /* background: lightblue; */
+}
+
+.card {
+  width: 200px;
+  height: 250px;
+  padding: 10px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid white;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.card-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-heading {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.edit-note {
+  height: 28px;
+  cursor: pointer;
+}
+
+.edit-note > img {
+  height: 100%;
+  width: 100%;
+}
+
+.card-content {
+  font-size: 14px;
+  margin-top: 10px;
+  /* background: blue; */
+  width: 100%;
+  height: 180px;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 8px;
+  word-break: break-word;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+/* width */
+.card-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.card-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+/* Handle */
+.card-content::-webkit-scrollbar-thumb {
+  background: rgba(47, 46, 46, 0.644);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.card-content::-webkit-scrollbar-thumb:hover {
+  background: rgb(107, 107, 107);
+}
+.card-content:hover {
+  overflow-y: visible;
+}
+
+.circle1,
+.circle2 {
+  z-index: -5;
+}
+
+.circle1 {
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  filter: blur(10px);
+
+  position: absolute;
+  /* left: -140px;
+  top: -100px; */
+  left: -7rem;
+  top: -6rem;
+
+  background: linear-gradient(180deg, #97ff57 0%, #0d99ff 99.99%, #0094ff 100%);
+
+  transform: rotate(18deg);
+}
+
+.circle2 {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  filter: blur(5px);
+
+  position: absolute;
+  /* right: -100px;
+  bottom: -100px; */
+  right: -6rem;
+  bottom: -7rem;
+
+  background: linear-gradient(180deg, #ff57d0 0%, #0d99ff 99.99%, #0094ff 100%);
+  transform: rotate(18deg);
+}

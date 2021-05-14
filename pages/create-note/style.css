@@ -62,15 +62,19 @@ form {
 h1 {
   margin: 15px;
   font-size: 3rem;
-  margin: 25px;
 }
-input {
+.notesInput {
   margin: 20px;
   padding: 5px 10px;
   border-radius: 30px;
-  height: 300px;
-  width: 300px;
+  height: 15rem;
+  width: 19rem;
   color: black;
+  display: flex;
+  text-align: center;
+}
+input:focus {
+  outline: none;
 }
 ::placeholder {
   color: rgb(0, 0, 0);
@@ -85,6 +89,17 @@ input {
 ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: rgb(0, 0, 0);
+}
+
+.notesHeading {
+  margin: 20px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  height: 3rem;
+  width: 19rem;
+  color: black;
+  display: flex;
+  text-align: center;
 }
 
 .circle1,
