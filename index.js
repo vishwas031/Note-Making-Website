@@ -1,17 +1,16 @@
-const body = document.querySelector('body')
-const createNoteInput = document.querySelector(".notesInput")
+const body = document.querySelector("body");
+const signInSignUpButton = document.querySelector(".sign-in-sign-up");
 
+window.addEventListener("load", () => {
+  body.classList.add("visible");
 
-window.addEventListener('load',()=>{
-    body.classList.add("visible");
+  const token = localStorage.getItem("jwt");
+
+  if (token) {
+    location.href = "/pages/dashboard/dashboard.html";
+  }
 });
 
-
-createNoteInput.addEventListener("change",(e)=>{
-    console.log(e.target.value);
+signInSignUpButton.addEventListener("click", () => {
+  location.href = "/pages/signin-signup-page/authenticate.html";
 });
-
-const urlParams = new URLSearchParams(window.location.search);
-const noteId = urlParams.get("noteId");
-
-console.log(noteId);
