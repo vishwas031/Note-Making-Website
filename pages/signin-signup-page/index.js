@@ -17,7 +17,7 @@ signInForm.addEventListener("submit", (event) => {
   const email = signInEmail.value;
   const password = signInPassword.value;
 
-  body.innerHTML =`<img scr="../../assets/Infinity-1s-200px.svg" alt="" />`;
+  body.innerHTML =`<img src="../../assets/loading.gif" alt="" />`;
   fetch(`${apiUrl}/auth/signin`, {
     method: "POST",
     headers: {
@@ -61,7 +61,7 @@ signUpForm.addEventListener("submit", (event) => {
     alert("Please Enter all Entries");
     return;
   }
-  body.innerHTML =`<img scr="../../assets/Infinity-1s-200px.svg" alt="" />`;
+  body.innerHTML =`<img src="../../assets/loading.gif" alt="" />`;
   fetch(`${apiUrl}/auth/signup`, {
     method: "POST",
     headers: {

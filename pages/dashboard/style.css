@@ -88,13 +88,13 @@ nav {
 }
 
 .edit-note,
-.delete-note {
+svg {
   height: 28px;
   cursor: pointer;
 }
 
 .edit-note > img,
-.delete-note > img {
+svg > img {
   height: 100%;
   width: 100%;
 }
@@ -103,6 +103,10 @@ nav {
   flex-direction: row;
 }
 
+svg,
+.edit-note {
+  margin: 0 3px;
+}
 .card-content {
   font-size: 14px;
   margin-top: 10px;
