@@ -22,7 +22,7 @@ body {
   opacity: 1;
 } */
 
-.circle1,
+/* .circle1,
 .circle2 {
   z-index: -5;
   position: absolute;
@@ -52,7 +52,7 @@ body {
   background: linear-gradient(180deg, #ff57d0 0%, #0d99ff 99.99%, #0094ff 100%);
   filter: blur(5px);
   transform: rotate(18deg);
-}
+} */
 
 .form-container {
   width: 900px;
