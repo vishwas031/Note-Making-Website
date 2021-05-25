@@ -153,7 +153,10 @@ main > div {
   }
 
   .homepage-illustration {
-    width: 90%;
+    width: 85%;
+  }
+  .sign-in-sign-up {
+    font-size: 12px;
   }
   /* .circle2,
   .circle1 {

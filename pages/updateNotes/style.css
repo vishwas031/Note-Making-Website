@@ -117,3 +117,9 @@ body {
   filter: blur(5px);
   transform: rotate(18deg);
 }
+
+@media only screen and (max-width: 400px) {
+  * {
+    font-size: 0.9rem;
+  }
+}

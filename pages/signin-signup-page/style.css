@@ -11,6 +11,9 @@ body {
   width: 100%;
   background: linear-gradient(45deg, #ff9ce3, #4ab3ff);
   overflow: hidden;
+  overflow-y: scroll;
+  margin-top: 20px;
+  margin-bottom: 20px;
   /* opacity: 0;
   transition: opacity 1s ease; */
   display: flex;
@@ -125,6 +128,9 @@ form > button:active {
   .form-container {
     justify-content: space-evenly;
   }
+  img {
+    width: 150px;
+  }
 }
 
 @media only screen and (max-width: 750px) {
@@ -134,5 +140,8 @@ form > button:active {
   }
   .signin-form {
     margin-bottom: 3rem;
+  }
+  img {
+    width: 75px;
   }
 }

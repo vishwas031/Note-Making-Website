@@ -22,6 +22,7 @@ body {
   transition: opacity 1s ease;
   /* overflow-y: scroll; */
   overflow-x: hidden;
+  padding-bottom: 20px;
   /* overflow-y: hidden; */
 }
 
@@ -236,28 +237,29 @@ body:hover {
   }
 }
 
-/* @media only screen and (max-width: 700px) {
+@media only screen and (max-width: 400px) {
   * {
     font-size: 0.95em;
   }
   nav {
-    padding: 50px 3em;
+    padding: 50px 1.5em;
   }
   .card-container {
-    padding: 30px 3rem;
+    padding: 30px 1.5rem;
   }
   .welcome {
     padding-top: 10px;
-    font-size: 3em;
+    font-size: 2em;
   }
   .nav-controls {
     padding-top: 10px;
+    font-size: 0.8em;
   }
-  .circle2,
+  /* .circle2,
   .circle1 {
     display: none;
-  }
+  } */
   .master {
-    overflow-y: scroll;
+    overflow-y: auto;
   }
-} */
+}
